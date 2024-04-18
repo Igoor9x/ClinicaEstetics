@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #F2EFED;
+}
+.liContainerAbout, .liContainerTratamentos  {
+    position: relative;
+}
+.liContainerAbout a, .liContainerTratamentos a  {
+    display: block;
+}
+.liContainerAbout li, .liContainerTratamentos li{
+    display: block;
+}
+.dropdownAbout, .dropdownTratamentos{
+    width: 18vw;
+    border-radius: 20px;
+    padding: 10px 12px;
+    background-color: #e9e9e9;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    gap: 20px;
+}
+
+.liContainerAbout:hover .dropdownAbout{
+    display: block;
+} 
+.liContainerTratamentos:hover .dropdownTratamentos{
+    display: block;
+}
+.dropdownAbout li, .dropdownTratamentos li {
+    margin-bottom: 12px;
+}
+.dropdownAbout li a, .dropdownTratamentos li a{
+    color: #3b1c04;
+    transition: .4s;
+}
+.dropdownAbout li a:hover,
+.dropdownTratamentos li a:hover{
+    color: #a14905;
+}

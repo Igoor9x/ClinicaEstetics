@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Estetics</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="w-full h-20 flex items-center justify-between px-16 lg:p-0 lg:justify-evenly bg-white">
+        <img 
+            class="w-24"
+            src="./assets/logo clinica estetica.png" 
+            alt="logo clinica Estetics"
+        />
+            <div class="hidden lg:block">
+                <ul class="flex gap-10 items-center justify-center">
+                    <li class="liContainerAbout"><a href="">Sobre <i class="fa-solid fa-angle-down text-xs"></i></a>
+                        <ul class="dropdownAbout">
+                            <li class="text-lg"><a href="">A clínica</a></li>
+                            <li class="text-lg"><a href="">Dra. Victoria Lustosa</a></li>
+                            <li class="text-lg"><a href="">Equipe</a></li>
+                        </ul>
+                    </li>
+                    <li class="liContainerTratamentos"><a href="">Tratamentos <i class="fa-solid fa-angle-down text-xs"></i></a>
+                        <ul class="dropdownTratamentos">
+                            <li class="text-lg"><a href="">Harmonização Facial</a></li>
+                            <li class="text-lg"><a href="">Harmonização Corporal</a></li>
+                            <li class="text-lg"><a href="">Massoterapia</a></li>
+                            <li class="text-lg"><a href="">JetBronze</a></li>
+                            <li class="text-lg"><a href="">Limpeza de Pele</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-10 text-lg">
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Endereços</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="modalContainer hidden w-full flex flex-col items-center justify-center h-screen absolute bottom-0 left-0 bg-white z-10">
+                <ul class="flex flex-col gap-6 text-2xl items-center justify-center">
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Tratamentos</a></li>
+                    <ul class="flex flex-col gap-6 items-center justify-center ">
+                        <li><a href="">Cursos</a></li>
+                        <li><a href="">Endereços</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    
+                    <button class="lg:block py-3 px-14 rounded-md text-white font-semibold text-lg bg-yellow-950 hover:bg-red-900 duration-500">Contato</button>
+                </ul>
+                <button class="closeModalBtn mt-8 text-center  bg-yellow-950 text-white px-5 py-3 rounded-full"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <button class=" hidden lg:block py-3 px-14 rounded-md text-white font-semibold text-lg bg-yellow-950 hover:bg-red-900 duration-500">Contato</button>
+            <button class="lg:hidden text-2xl modalBtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <section class="bg-home bg-cover bg-center w-full h-complete relative">
+        <div class="lg:w-3/6  lg:absolute lg:right-36 flex flex-col items-center bg-white bg-opacity-55 rounded-lg p-5 sm:w-4/6 mx-auto relative top-20 ">
+            <h2 class="text-yellow-900 mt-4 mb-3 font-medium text-center text-4xl">Bem-estar e beleza em perfeita sintonia</h2>
+            <span class="text-zinc-500 text-2xl mb-3">
+                Acreditamos que a beleza verdadeira nasce do equilíbrio entre o 
+                bem-estar físico e mental. Descubra nossa ampla gama de serviços 
+                personalizados para promover sua melhor versão
+            </span>
+            <button class="bg-neutral-800 py-3 px-8 rounded-lg text-sm font-medium text-white">Agende seu horário</button>
+        </div>
+    </section>
+    <main class="mt-28">
+        <section class="bg-lineal">
+            <h1 class="text-5xl text-center border-b-2 border-neutral-500  py-10 text-yellow-900">Tratamentos da clínica</h1>
+            <div class="mt-10 flex gap-14 lg:gap-0 flex-col lg:flex-row items-center justify-evenly">
+                <div class="w-5/6 lg:w-72 flex flex-col items-center justify-center text-center">
+                    <img 
+                        class="lg:w-56 lg:h-56 sm:w-96 sm:h-96 w-60 h-60 rounded-full object-cover object-center drop-shadow-lg"
+                        src="./assets/harmonizacaofacial.jpg" 
+                        alt="rosto"
+                    />
+                    <h2 class="mt-4 mb-3 font-semibold text-xl sm:text-3xl lg:text-2xl text-neutral-700">Harmonização facial</h2>
+                    <span class="text-neutral-700 text-base sm:text-2xl">Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão</span>
+                </div>
+                <div class="w-5/6 lg:w-72 flex flex-col items-center justify-center text-center">
+                    <img 
+                        class="lg:w-56 lg:h-56 sm:w-96 sm:h-96 w-60 h-60 rounded-full object-cover object-center drop-shadow-lg"
+                        src="./assets/harmonizacaocorporal.jpg" 
+                        alt="corpo"
+                    />
+                    <h2 class="mt-4 mb-3 font-semibold  text-xl sm:text-3xl text-neutral-700">Harmonização corporal</h2>
+                    <span class="text-neutral-700 text-base sm:text-2xl">Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes</span>
+                </div>
+                <div class="w-5/6 lg:w-72 flex flex-col items-center justify-center text-center">
+                    <img 
+                        class="lg:w-56 lg:h-56 sm:w-96 sm:h-96 w-60 h-60 rounded-full object-cover object-center drop-shadow-lg"
+                        src="./assets/massoterapia.jpg" 
+                        alt="rosto"
+                    />
+                    <h2 class="mt-4 mb-3 font-semibold  text-xl sm:text-3xl text-neutral-700">Massoterapia</h2>
+                    <span class="text-neutral-700 text-base sm:text-2xl">Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas</span>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col lg:flex-row items-center justify-evenly">
+                <div class="w-5/6 lg:w-72 flex flex-col items-center justify-center text-center">
+                    <img 
+                        class="lg:w-56 lg:h-56 sm:w-96 sm:h-96 w-60 h-60 rounded-full object-cover object-center drop-shadow-lg"
+                        src="./assets/harmonizacaofacial.jpg" 
+                        alt="rosto"
+                    />
+                    <h2 class="mt-4 mb-3 font-semibold  text-xl sm:text-3xl text-neutral-700">Jetbronze</h2>
+                    <span class="text-neutral-700 text-base sm:text-2xl mb-6">O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele</span>
+                </div>
+                <div class="w-5/6 lg:w-72 flex flex-col items-center justify-center text-center">
+                    <img 
+                        class="lg:w-56 lg:h-56 sm:w-96 sm:h-96 w-60 h-60 rounded-full object-cover object-center drop-shadow-lg"
+                        src="./assets/limpeza de pele.jpg" 
+                        alt="rosto"
+                    />
+                    <h2 class="mt-4 mb-3 font-semibold  text-xl sm:text-3xl text-neutral-700">Limpeza de pele</h2>
+                    <span class="text-neutral-700 text-base sm:text-2xl mb-6 ">Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece</span>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col lg:flex-row md:flex-wrap">
+                <img 
+                    class="lg:w-3/6 w-full h-screen object-cover object-center"
+                    src="./assets/stephanie.webp" 
+                    alt="" 
+                    
+                />
+                <div class="flex flex-col items-center justify-center text-center lg:w-3/6 w-full h-screen">
+                    <div class="text-center lg:text-start lg:w-4/5 w-ful py-2 px-10">
+                        <p class="font-bold leading-3 text-3xl lg:text-base text-yellow-900">DRA.</p>
+                        <span class="text-7xl lg:text-6xl text-yellow-900">Victoria Lustosa</span>
+                        <p class="mt-6 font-light lg:text-base text-2xl text-neutral-700 pr-0 lg:pr-28 ">Conheça a trajetória de vida e carreira profissional inspiradora da Dra. Victoria Lustosa.</p>
+                        <button class="mt-6 text-white lg:text-base text-2xl bg-neutral-600 py-3 px-8 rounded-md hover:bg-neutral-700 duration-500"><a href="">Leia mais sobre a Dra. Victoria Lustosa </a></button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center lg:w-3/6 w-full h-screen">
+                    <div class="text-center lg:text-start lg:w-4/5 w-ful py-2 px-10">
+                        <span class=" leading-3 text-3xl lg:text-6xl text-yellow-900">Localização privilegiada</span>
+                        <p class="mt-6 font-light lg:text-base text-2xl text-neutral-700 pr-0 lg:pr-28">Localização estratégica para sua comodidade e conforto. Clique no botão abaixo e descubra a melhor trajeto para nossa clínica.</p>
+                        <button class="mt-6 text-white lg:text-base text-2xl bg-neutral-600 py-3 px-8 rounded-md hover:bg-neutral-700 duration-500"><a href="">Agende seu horário</a></button>
+                    </div>
+                </div>
+                <img 
+                    class="lg:w-3/6 w-full h-screen object-cover object-center"
+                    src="./assets/bg-clinic-location.webp" 
+                    alt="" 
+                    
+                />
+        </section>
+        <section>
+            <div class="flex flex-col bg-neutral-700">
+                <div class="w-full flex lg:flex-row flex-col mt-4 justify-around text-center items-center">
+                    <span class="lg:w-3/6 w-full text-white text-5xl font-bold">+<span class="counterClient"></span> clientes</span>
+                    <span class="lg:w-3/6 w-full p-14 text-white text-xl text-center lg:text-start">
+                        A confiança de mais de 800 clientes nos motiva a continuar oferecendo o
+                        melhor atendimento sempre. Agende sua consulta e faça parte dessa história de sucesso.
+                    </span>
+                </div>
+                <button class="mx-auto bg-white py-4 px-16 rounded-md text-neutral-600 font-medium mb-14"><a href="">Agende seu horário</a></button>
+            </div>
+        </section> 
+        <section class="flex flex-col lg:flex-row  md:flex-wrap">
+            <img 
+                class="lg:w-3/6 w-full h-screen object-cover object-center"
+                src="./assets/team-introduction.webp" 
+                alt="" 
+                
+            />
+            <div class="flex flex-col items-center justify-center text-center lg:w-3/6 w-full h-screen">
+                <div class="text-center lg:text-start lg:w-4/5 w-ful py-2 px-10">
+                    <span class="leading-3 text-3xl lg:text-6xl text-yellow-900">Prontos Para te Receber</span>
+                    <p class="mt-6 font-light lg:text-base text-2xl text-neutral-700 pr-0 lg:pr-28 ">Somos apaixonados por cuidar da saúde e o bem-estar estamos prontos para oferecer as melhores experiências de beleza e autocuidado.</p>
+                    <button class="mt-6 text-white lg:text-base text-2xl bg-neutral-600 py-3 px-8 rounded-md hover:bg-neutral-700 duration-500"><a href="">Conheça nosso profissionais</a></button>
+                </div>
+            </div>
+            <img 
+                class="lg:w-3/6ll h-screen object-cover object-center"
+                src="./assets/about-courses.webp" 
+                alt="" 
+                
+            />
+            <div class="flex flex-col items-center justify-center text-center lg:w-3/6 w-full h-screen">
+                <div class="text-center lg:text-start lg:w-4/5 w-ful py-2 p-1 sm:px-10">
+                    <span class="text-6xl text-yellow-900">Cursos ministrados por nossa clínica</span>
+                    <p class="mt-6 font-light text-neutral-700 pr-0 lg:pr-28 ">São centenas de profissionais de estética treinados por nossos cursos de referência. Confira depoimentos e a agenda para os próximos eventos profissionalizantes.</p>
+                    <button class="mt-6 text-white lg:text-base text-2xl bg-neutral-600 py-3 px-8 rounded-md hover:bg-neutral-700 duration-500"><a href="">Confira a agenda para próximos cursos</a></button>
+                </div>
+            </div>
+    </section>
+    </main>
+    <footer class=" flex flex-col w-full bg-fot">
+        <div class="mt-8 flex flex-col sm:flex-row items-center px-20 justify-between mb-4 border-b border-neutral-600">
+            <img 
+                class="w-24"
+                src="./assets/logo clinica estetica.png" 
+                alt="logo clinica Estetics"
+            />
+            <div class="flex gap-4 p-6 sm:p-0 text-neutral-600 text-2xl">
+                <span>Contato:</span>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+                <a href=""><i class="fa-regular fa-comment-dots"></i></a>
+            </div>
+        </div>
+        <span class="mt-6 mb-8 sm:mb-28 mx-auto text-center sm:text-start text-neutral-600 font-extralight">© 2024 Dra. Victoria Lustosa, todos os direitos reservados</span>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>
